@@ -1,16 +1,148 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Lingua</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Square div in Bootstrap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<style>
 
-  <body>
-    <%= yield %>
-  </body>
+@media screen and (min-width: 768px) {
+  .row.row-tile .col-sm-3.tile {
+    padding: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 0;
+    margin-bottom: 6px;
+  }
+  .row.row-tile .col-sm-3.tile.square {
+    padding-bottom: 25%;
+  }
+  .row.row-tile .col-md-10.tile {
+    padding: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 0;
+    margin-bottom: 6px;
+  }
+}
+.row.row-tile .tile-content-blue {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #4679BD;
+}
+.row.row-tile .tile-content-yellow {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ffff00;
+}
+.row.row-tile .tile-content-silver {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c0c0c0;
+}
+.row.row-tile .tile-content-red {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ff0000;
+}
+.row.row-tile .tile-content1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.row.row-tile [class*="col-"] .tile-content-blue:hover {
+  box-shadow: #bbb 0px 0px 0px 2px;
+}
+.row.row-tile [class*="col-"] .tile-content-silver:hover {
+  box-shadow: #bbb 0px 0px 0px 2px;
+}
+.row.row-tile [class*="col-"] .tile-content-red:hover {
+  box-shadow: #bbb 0px 0px 0px 2px;
+}
+.row.row-tile [class*="col-"] .tile-content-yellow:hover {
+  box-shadow: #bbb 0px 0px 0px 2px;
+}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1>Houses</h1>
+  <div class="row row-tile">
+    <div class="col-md-10 tile">
+
+      <div class="row row-tile">
+        <div class="col-sm-3 tile square ">
+          <div class="tile-content-blue">
+            <br><br><br>
+            taker_user_id: 1<br>
+            maker_user_id: 3<br>
+            qty: 21<br>
+            price: 1.7<br>
+            qty_left: 12<br>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6 tile square">
+          <div class="tile-content-yellow">
+            <br><br><br>
+            taker_user_id: 2<br>
+            maker_user_id: 4<br>
+            qty: 13<br>
+            price: 1.5<br>
+            qty_left: 6
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-tile">
+        <div class="col-sm-3 col-xs-6 tile square">
+          <div class="tile-content-silver">
+            <br><br><br>
+            taker_user_id: 4<br>
+            maker_user_id: 1<br>
+            qty: 8<br>
+            price: 0.4<br>
+            qty_left: 3<br>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6 tile square">
+          <div class="tile-content-red">
+            <br><br><br>
+            taker_user_id: 2<br>
+            maker_user_id: 4<br>
+            qty: 15<br>
+            price: 1.8<br>
+            qty_left: 6<br>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
 </html>

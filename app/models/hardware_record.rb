@@ -1,0 +1,3 @@
+class HardwareRecord < ApplicationRecord
+
+end
