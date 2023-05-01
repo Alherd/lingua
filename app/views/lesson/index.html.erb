@@ -5,25 +5,31 @@
   </head>
 
   <body>
-    <p>Re-write the sentences using "must have", "might have", or "can't have"</p>
-
-<form action="/action_page.php">
-  1 <label>I'm sure the burglar got in through an open window.</label><br>
-  <label for="lname">The burglar</label> <input type="text" id="fname" name="fname">.<br>
-  2 <label>Perhaps you left your bag on your seat in the restaurant.</label><br>
-  <label for="lname">You</label> <input type="text" id="fname" name="fname">.<br>
-  3 <label>I'm sure my wife didn't take my keys. She never does that.</label><br>
-  <label for="lname">My wife</label> <input type="text" id="fname" name="fname">. She never does that.<br>
-  4 <label>Perhaps our neighbours have gone on holiday. There are no lights on in the house.</label><br>
-  <label for="lname">Our neighbours</label> <input type="text" id="fname" name="fname">. There are no lights on in the house.<br>
-  5 <label>I'm sure the Mayor didn't accept the bribe. He's a very honest man.</label><br>
-  <label for="lname">The Mayor</label> <input type="text" id="fname" name="fname">. He's a very honest man.<br>
-  6 <label>Perhaps the thieves sold the stolen goods.</label><br>
-  <label for="lname">The thieves</label> <input type="text" id="fname" name="fname">.<br>
-  7 <label>I'm sure my girlfriend was at home last night. She was studying for an exam.</label><br>
-  <label for="lname">My girlfriend</label> <input type="text" id="fname" name="fname">. She was studying for an exam.<br>
-  8 <label>I'm sure I didn't borrow any money from you. I never forget things like that.</label><br>
-  <label for="lname">I</label> <input type="text" id="fname" name="fname">. I never forget things like that.<br>
-</form>
+    <p>Complete the sentences</p>
+    1. <label>  Something that is <label><input type="text" id="fname1" name="fname11" value="abvgdejka"> <label> does not cost a lot to buy or use.<label><br>
+    2. <label>  A <label><input type="text" id="fname1" name="fname11" value="abvgdejka"> <label> product has no defects.<label><br>
+    3. <label>  A <label><input type="text" id="fname1" name="fname11" value="abvgdejka"> <label> product is attractive and fashionable.<label><br>
+    4. <input type="text" id="fname1" name="fname11" value="abvgdejka"> <label> goods are expensive and intended to appeal to people in a high social class.<label><br>
+    5. <label>  If a product is <label><input type="text" id="fname1" name="fname11" value="abvgdejka"> <label> it is worth the price you pay for it.<label><br>
+    6. <label>  If something is <label><input type="text" id="fname1" name="fname11" value="abvgdejka"> <label> you can trust it or depend on it.<label><br>
+    7. <label>  A <label><input type="text" id="fname1" name="fname11" value="abvgdejka"> <label> brand is not affected by changes in fashion.<label><br>
+  
+<br>
+  <button onclick="myFunction(this.dataset.param)" data-param=<%= @values %>>Check</button>
+  <div id="bottom-alert" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #f44336; color: #fff; padding: 15px; display: none;">
+  Это сообщение отображается внизу экрана!
+</div>
   </body>
 </html>
+
+<script>
+  function myFunction(data) {
+    answers = {"1": "inexpensive", "2": "well=made", "3" :"stylish", "4": "upmarket", "5" :"value for money", "6": "reliable", "7": "timeless"}
+    console.log(answers);
+
+    // alert(data.toString());
+  var alertElement = document.getElementById("bottom-alert");
+  document.getElementById("bottom-alert").innerHTML = "aaa";
+  alertElement.style.display = "block";
+  }
+</script>
