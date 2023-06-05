@@ -1,0 +1,2 @@
+class CompletedForm < ApplicationRecord
+end
