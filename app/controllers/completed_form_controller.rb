@@ -8,4 +8,8 @@ class CompletedFormController < ApplicationController
   def save_fname
     CompletedForm.create!(user_id: 1, task_id: params['task_id'], fname: params['fname'])    
   end
+
+  def clean_form
+    CompletedForm.where(user_id: 1, task_id: params['task_id']).delete_all  
+  end
 end
